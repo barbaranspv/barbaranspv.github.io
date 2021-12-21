@@ -168,7 +168,7 @@ h2 {
 
     .photo-div {
         margin-top: 60px;
-        left: -40px
+        left: -40px;
     }
 }
 
@@ -180,7 +180,7 @@ h2 {
 
     .photo-div {
         margin-top: 60px;
-        left: -20px
+        left: -20px;
     }
 }
 
@@ -198,6 +198,7 @@ h2 {
 
     h2 {
         font-size: 18px;
+        margin: 0 0 20px 0 ;
     }
 
     .photo-div {
@@ -219,7 +220,7 @@ h2 {
 
     .my-photo {
         height: 318px;
-        pointer-events: none
+        pointer-events: ;
     }
 
     .background-dark {
@@ -244,5 +245,23 @@ h2 {
     .my-links {
         margin: 0;
     }
+
+}
+
+
+
+@media only screen and (max-width: 350px) {
+   .website-container{
+       padding: 30px 20px;
+   }
+
+    .photo-div {
+        left:0;
+    }
+
+
+
+
+
 
 }
