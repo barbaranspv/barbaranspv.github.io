@@ -4,7 +4,21 @@ var cards = document.querySelectorAll(".card");
 
 var elements;
   var windowHeight;
+  $( document ).ready(function() {
+    
+  $("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+  
 
+$("a[href='#timeline']").click(function() {
+  $("html, body").animate({ scrollTop: $(".timeline").offset().top }, 1000);
+  return false;
+});
+
+
+});
   function init() {
     elements = document.querySelectorAll('.hidden');
     windowHeight = window.innerHeight;
@@ -41,11 +55,7 @@ function callbackFunc() {
   }
 }
 
-$("a[href='#top']").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  });
-  
+
 init();
 
 document.body.addEventListener('scroll', callbackFunc);
