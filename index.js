@@ -19,6 +19,8 @@ $("a[href='#timeline']").click(function() {
 
 
 });
+
+
   function init() {
     elements = document.querySelectorAll('.hidden');
     windowHeight = window.innerHeight;

@@ -521,7 +521,6 @@ a {
 
 @media only screen and (max-width: 1430px) {
     .website-container {
-        scroll-snap-align: none;
 
         padding: 0 80px;
 
@@ -540,13 +539,11 @@ a {
     }
 
     .timeline {
-        scroll-snap-align: none;
 
         padding-top: 80px;
     }
 
     .projects-container {
-        scroll-snap-align: none;
         padding: 80px 80px 100px;
 
 
@@ -561,6 +558,7 @@ a {
 
 @media only screen and (max-width: 1000px) {
     .website-container {
+        scroll-snap-align: none;
 
         min-height: 100vh;
         padding: 80px 80px 70px;
@@ -592,6 +590,10 @@ a {
     .photo-div {
         margin-top: 60px;
         left: -40px;
+    }
+    .timeline, .projects-container {
+        scroll-snap-align: none;
+
     }
 }
 
