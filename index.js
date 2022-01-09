@@ -12,10 +12,7 @@ var elements;
   });
   
 
-$("a[href='#timeline']").click(function() {
-  $("html, body").animate({ scrollTop: $(".timeline").offset().top }, 1000);
-  return false;
-});
+
 
 
 });
